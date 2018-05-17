@@ -5,6 +5,9 @@ require 'nokogiri'
 require 'yaml'
 require 'openssl'
 require "aliyun_mns/version"
+require "aliyun_mns/topic"
+require "aliyun_mns/queue"
+require "aliyun_mns/message"
 class Hash
   def self.xml_array content, *path
     o = xml_object(content, *path)
